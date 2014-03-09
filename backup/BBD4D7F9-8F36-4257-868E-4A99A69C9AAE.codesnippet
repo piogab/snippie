@@ -3,43 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initdict</string>
+	<string>tvdel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (id)initWithDictionary:(NSDictionary *)dict {
-    self = [super init];
-    if (!self) return nil;
-    
-    [self unpackFromDictionary:dict];
-    
-    return self;
+	<string>#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    &lt;#statements#&gt;
 }
-
-- (NSDictionary *)toDictionary {
-    NSMutableDictionary *dict = [NSMutableDictionary new];
-    
-    return dict;
-}
-
-#pragma mark - Private
-
-- (void)unpackFromDictionary:(NSDictionary *)dictionary {
-    
-}</string>
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A50A9B42-6886-4A72-ADB9-80946A739CE8</string>
+	<string>BBD4D7F9-8F36-4257-868E-4A99A69C9AAE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Initializer and Unpack method</string>
+	<string>Placeholders for required UITableViewDelegate protocol methods</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Init With Dictionary</string>
+	<string>UITableViewDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
